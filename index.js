@@ -11,6 +11,9 @@ btn__container.addEventListener("click", (e) => {
 
         const sound_id = e.target.id;
         const sound_element = document.getElementById(sound_id);
-        sound_element.play();
+        if (sound_element) {
+            sound_element.play();
+        }
+
     }
 })
